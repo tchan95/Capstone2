@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F6E47321-990E-9AA3-82E2-1001D052D573}</ProjectGuid>
+    <ProjectGuid>{0699EC82-5DBB-6954-1E18-454374C93B0C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,7 +51,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\AlwaysForward.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\ConstForce.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\FPSController.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\FPSWeaponTrigger.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\MouseFollower.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\Orbiter.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\PitchShifter.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\TankAlwaysForward.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\TankController.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\TankProjectile.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\TankTranslator.cs" />
+     <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\TankWeaponController.cs" />
+     <Compile Include="Assets\Objects\Trail\Effects\Trails\SmokePlume.cs" />
+     <Compile Include="Assets\Objects\Trail\Effects\Trails\SmokeTrail.cs" />
+     <Compile Include="Assets\Objects\Trail\Effects\Trails\SmoothTrail.cs" />
+     <Compile Include="Assets\Objects\Trail\Effects\Trails\Trail.cs" />
+     <Compile Include="Assets\Objects\Trail\Effects\Trails\TrailRenderer_Base.cs" />
+     <Compile Include="Assets\Objects\Trail\Shared\Generic\VersionInformation.cs" />
+     <Compile Include="Assets\Objects\Trail\Shared\Utillities\CircularBuffer.cs" />
+     <Compile Include="Assets\Objects\Trail\Shared\Utillities\GizmosExtra.cs" />
+     <Compile Include="Assets\Objects\Trail\Shared\Utillities\Range.cs" />
+     <None Include="Assets\Objects\Trail\__SharedDemoAssets\_Shaders\Unlit Transparent Color.shader" />
+     <None Include="Assets\Objects\SimpleSky\ReadMe.txt" />
+     <None Include="Assets\Objects\Shader\TSM2Cutout.shader" />
+     <None Include="Assets\Objects\Shader\TSM2BaseOutline.shader" />
+     <None Include="Assets\Objects\Shader\TSM2Base.shader" />
+     <None Include="Assets\Objects\Trail\__SharedDemoAssets\Sword\sword License.txt" />
+     <None Include="Assets\Objects\Trail\__SharedDemoAssets\a-104 Rifle\a-104 Rifle License.txt" />
+     <None Include="Assets\Objects\Fruit Pack\README.txt" />
+     <None Include="Assets\Objects\Trail\__SharedDemoAssets\_Shaders\DiffuseColorMask.shader" />
+     <None Include="Assets\Objects\Shader\TSM2Transparent.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
