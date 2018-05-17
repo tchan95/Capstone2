@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0699EC82-5DBB-6954-1E18-454374C93B0C}</ProjectGuid>
+    <ProjectGuid>{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,6 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Anima_Move.cs" />
+     <Compile Include="Assets\Cat_Move.cs" />
+     <Compile Include="Assets\Chic_Move.cs" />
+     <Compile Include="Assets\Cow_Move.cs" />
+     <Compile Include="Assets\intro\NewBehaviourScript.cs" />
      <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\AlwaysForward.cs" />
      <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\ConstForce.cs" />
      <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\FPSController.cs" />
@@ -72,6 +77,7 @@
      <Compile Include="Assets\Objects\Trail\Shared\Utillities\CircularBuffer.cs" />
      <Compile Include="Assets\Objects\Trail\Shared\Utillities\GizmosExtra.cs" />
      <Compile Include="Assets\Objects\Trail\Shared\Utillities\Range.cs" />
+     <Compile Include="Assets\walk2.cs" />
      <None Include="Assets\Objects\Trail\__SharedDemoAssets\_Shaders\Unlit Transparent Color.shader" />
      <None Include="Assets\Objects\SimpleSky\ReadMe.txt" />
      <None Include="Assets\Objects\Shader\TSM2Cutout.shader" />
