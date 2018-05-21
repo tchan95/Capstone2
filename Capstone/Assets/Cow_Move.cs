@@ -28,6 +28,7 @@ public class Cow_Move : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
+        Cow.Play("eat");
         Invoke("Cows_Move", 2.4f);
         point[0] = cow.transform.position;
         point_y[0] = cow.transform.position;
@@ -36,15 +37,13 @@ public class Cow_Move : MonoBehaviour
     void Update()
     {
         Invoke("Move_Init", 2.0f); // 2.4초후 실행, 변경 금지
+        Invoke("Move_Finish", 6.7f);
     }
+
 
     public void Cows_Move() // animator 실행하는 함수(변경 금지)
     {
-        if (Cow != null)
-        {
-            Cow.SetInteger("CowState", 2);
-        }
-        else
+        if (Cow == null)
         {
             Debug.Log("Cow State Error!");
         }
@@ -70,11 +69,12 @@ public class Cow_Move : MonoBehaviour
 
     public void Moving()
     {
-        float step = 3.5f * Time.deltaTime;
+        float step = 5f * Time.deltaTime;
         Vector3 current = transform.position;
 
         if (x == a)
         {
+            Cow.Play("jump");
             if (plag == 0)
             {
                 posi[0] = point[x];
@@ -88,10 +88,9 @@ public class Cow_Move : MonoBehaviour
                 plag = 1;
             }
 
+            transform.LookAt(posi[posi_index]);
             transform.position = Vector3.MoveTowards(current, posi[posi_index], step);
-          //  transform.Rotate(Vector3.down, 1f, Space.World);
-
-
+       
 
             //목표지점에서 현재지점으로 회전
 
@@ -102,6 +101,7 @@ public class Cow_Move : MonoBehaviour
         }
         else if (y == a)
         {
+            Cow.Play("jump");
             if (plag == 0)
             {
                 //y -> x로 이동할때
@@ -111,22 +111,21 @@ public class Cow_Move : MonoBehaviour
                 point_y[x].z += 8f;
                 posi[2] = point_y[x];
                 point_y[x].z -= 8f;
-                posi[3] = point_y[x];
+                posi[3] = point_y[x]; 
 
                 plag = 1;
             }
-
-
+            transform.LookAt(posi[posi_index]);
             transform.position = Vector3.MoveTowards(current, posi[posi_index], step);
-           // transform.Rotate(Vector3.down, 1f, Space.World);
-
 
 
 
             //현재 좌표에서 목표 좌표로 회전
 
             if (Vector3.Distance(current, posi[posi_index]) == 0f)
+            {
                 posi_index++;
+            }
 
         }
     }
@@ -138,6 +137,26 @@ public class Cow_Move : MonoBehaviour
         }
     }
 
-
-
+    public void Move_Finish()
+    {
+        if (transform.rotation.y == 0)
+        {
+            return;
+        }
+        if (transform.rotation.y >= 0 && transform.rotation.y <= 180)
+        {
+            if (x == a)
+            {
+                Cow.Play("jump");
+                transform.Rotate(0, -10, 0);
+            }
+            else if (y == a)
+            {
+                Cow.Play("jump");
+                transform.Rotate(0, 10, 0);
+            }
+        }
+    }
 }
+
+

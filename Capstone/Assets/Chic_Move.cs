@@ -32,16 +32,14 @@ public class Chic_Move : MonoBehaviour
     void Update()
     {
         Invoke("Move_Init", 2.0f);
+        Invoke("Move_Finish", 6.7f);
+ 
     }
 
     public void Chicken_Move()
     {
-        if (Chicken != null)
-        {
-            Chicken.SetInteger("ChicState", 2);
-        }
-        else
-        {
+        if (Chicken == null)
+        { 
             Debug.Log("Chicken State Error!");
         }
     }
@@ -49,13 +47,15 @@ public class Chic_Move : MonoBehaviour
 
     private void Moving()
     {
-        float step = 3.5f * Time.deltaTime;
-        Vector3 current = transform.position;   //현재 위치 좌표
 
+        float step = 5f * Time.deltaTime;
+        Vector3 current = transform.position;   //현재 위치 좌표
+        
 
 
         if (x == a)
         {
+            Chicken.Play("jump");
             if (plag == 0)
             {
                 //x -> y로 이동할때
@@ -66,21 +66,23 @@ public class Chic_Move : MonoBehaviour
                 posi[2] = Cow_Move.instance.point[y];
                 Cow_Move.instance.point[y].z -= 8f;
                 posi[3] = Cow_Move.instance.point[y];
-
+         
 
                 plag = 1;
             }
-
+            transform.LookAt(posi[posi_index]);
             transform.position = Vector3.MoveTowards(current, posi[posi_index], step);
-          //  transform.rotation = Quaternion.FromToRotation(posi[posi_index], current);
 
             if (Vector3.Distance(current, posi[posi_index]) == 0f)
+            {
                 posi_index++;
+            }
 
 
         }
         else if (y == a)
         {
+            Chicken.Play("jump");
             if (plag == 0)
             {
                 //y -> x로 이동할때
@@ -91,16 +93,17 @@ public class Chic_Move : MonoBehaviour
                 posi[2] = Cow_Move.instance.point_y[x];
                 Cow_Move.instance.point_y[x].z -= 8f;
                 posi[3] = Cow_Move.instance.point_y[x];
-
+             
                 plag = 1;
             }
 
-
+            transform.LookAt(posi[posi_index]);
             transform.position = Vector3.MoveTowards(current, posi[posi_index], step);
 
             if (Vector3.Distance(current, posi[posi_index]) == 0f)
+            {
                 posi_index++;
-
+            }
 
         }
 
@@ -114,4 +117,25 @@ public class Chic_Move : MonoBehaviour
             Moving();
         }
     }
+
+   public void Move_Finish()
+    {
+        if (transform.rotation.y == 0)
+        {
+            return;
+        }
+        if (transform.rotation.y >= 0 && transform.rotation.y <= 180)
+        {
+            if (x == a)
+            {
+                Chicken.Play("jump");
+                transform.Rotate(0, -10, 0);
+            }
+            else if (y == a)
+            {
+                Chicken.Play("jump");
+                transform.Rotate(0, 10, 0);
+            }
+        }
+    } 
 }

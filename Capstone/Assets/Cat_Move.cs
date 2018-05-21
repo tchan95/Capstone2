@@ -31,28 +31,26 @@ public class Cat_Move : MonoBehaviour
     void Update()
     {
         Invoke("Move_Init", 2.0f);
+        Invoke("Move_Finish",6.7f);
     }
 
     public void Cats_Move()
     {
-        if (Cat != null)
-        {
-            Cat.SetInteger("CatState", 2);
-        }
-        else
-        {
-            Debug.Log("Cat State Error!");
+        if (Cat == null)
+        { 
+           Debug.Log("Cat State Error!");
         }
     }
 
     private void Moving()
     {
-        float step = 3.5f * Time.deltaTime;
+        float step = 5f * Time.deltaTime;
         Vector3 current = transform.position;   //현재 위치 좌표
-
+  
 
         if (x == a)
         {
+            Cat.Play("jump");
             if (plag == 0)
             {
                 //x -> y로 이동할때
@@ -66,16 +64,19 @@ public class Cat_Move : MonoBehaviour
 
                 plag = 1;
             }
-
+            transform.LookAt(posi[posi_index]);
             transform.position = Vector3.MoveTowards(current, posi[posi_index], step);
 
             if (Vector3.Distance(current, posi[posi_index]) == 0f)
+            {
                 posi_index++;
+            }
 
 
         }
         else if (y == a)
         {
+            Cat.Play("jump");
             if (plag == 0)
             {
                 //y -> x로 이동할때
@@ -89,15 +90,19 @@ public class Cat_Move : MonoBehaviour
 
                 plag = 1;
             }
+
+            transform.LookAt(posi[posi_index]);
             transform.position = Vector3.MoveTowards(current, posi[posi_index], step);
-           // transform.rotation = Quaternion.FromToRotation(posi[posi_index], current);
+
 
             if (Vector3.Distance(current, posi[posi_index]) == 0f)
+            {
                 posi_index++;
+            }
 
 
         }
-
+       
     }
     public void Move_Init()
     {
@@ -106,6 +111,25 @@ public class Cat_Move : MonoBehaviour
             Moving();
         }
     }
-
-
+    public void Move_Finish()
+    {
+        if (transform.rotation.y == 0)
+        {
+            return;
+        }
+        if (transform.rotation.y >= 0 && transform.rotation.y <= 180)
+        {
+            if (x == a)
+            {
+                Cat.Play("jump");
+                transform.Rotate(0, -10, 0);
+            }
+            else if (y == a)
+            {
+                Cat.Play("jump");
+                transform.Rotate(0, 10, 0);
+            }
+        }
+    }
 }
+

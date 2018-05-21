@@ -726,7 +726,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400060, guid: 5b373bc94ca436744ad461dae7298524, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 226506604}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2744,6 +2744,10 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  point_y:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   x: 0
   y: 0
 --- !u!114 &1188464235
@@ -3035,13 +3039,13 @@ Transform:
   m_PrefabParentObject: {fileID: 400040, guid: 07a3f8e57c9580347a47b4df3c3ced7d, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1297803279}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1354903626}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!137 &1297803281
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
