@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Anima_Move : MonoBehaviour {
 
     public GameObject Apple;

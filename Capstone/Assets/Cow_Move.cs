@@ -16,6 +16,7 @@ public class Cow_Move : MonoBehaviour
     public int x, y;
     int a = 0;
     int plag = 0;
+    
 
     void Awake()
     {
