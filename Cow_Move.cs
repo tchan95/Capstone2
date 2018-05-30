@@ -67,14 +67,17 @@ public class Cow_Move : MonoBehaviour
 
     private void Chek()
     {
-        if (Cow_Move.instance.cow_ok == true) //|| Chic_Move.instance.chic_ok == true || Cat_Move.instance.cat_ok == true)
+        if (Cow_Move.instance.cow_ok == true || Chic_Move.instance.chic_ok == true || Cat_Move.instance.cat_ok == true)
         {
+            Time.timeScale = 0.0f;
             Rand();
             point[0] = cow.transform.position;
             point_y[0] = cow.transform.position;
             posi_index = 0;
             cow_ok = false;
-            /*  Chic_Move.instance.x = x;
+            Chic_Move.instance.chic_ok = false;
+            Cat_Move.instance.cat_ok = false;
+              Chic_Move.instance.x = x;
               Chic_Move.instance.y = y;
               Cat_Move.instance.x = x;
               Cat_Move.instance.y = y;
@@ -90,7 +93,7 @@ public class Cow_Move : MonoBehaviour
               posi_index = 0; 
               Chic_Move.instance.posi_index = 0;
               Cat_Move.instance.posi_index = 0;
-              */
+            Time.timeScale = 1.0f;
         }
     }
 

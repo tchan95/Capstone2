@@ -37,7 +37,7 @@ public class Chic_Move : MonoBehaviour
         Invoke("Move_Init", 2.4f);
         print("닭" + transform.position);
 
-        if (Cow_Move.instance.cow_ok == true || Chic_Move.instance.chic_ok == true || Cat_Move.instance.cat_ok == true)
+        /*if (Cow_Move.instance.cow_ok == true || Chic_Move.instance.chic_ok == true || Cat_Move.instance.cat_ok == true)
         {
             x = Cow_Move.instance.x;
             y = Cow_Move.instance.y;
@@ -45,7 +45,7 @@ public class Chic_Move : MonoBehaviour
             Cow_Move.instance.point_y[1] = chicken.transform.position;
             posi_index = 0;
             chic_ok = false;
-        }
+        }*/
 
 
         /*if (posi_index == 4)

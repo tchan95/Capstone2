@@ -39,7 +39,7 @@ public class Cat_Move : MonoBehaviour
         print("고양이" + transform.position);
 
 
-        if (Cow_Move.instance.cow_ok == true || Chic_Move.instance.chic_ok == true || Cat_Move.instance.cat_ok == true)
+        /*if (Cow_Move.instance.cow_ok == true || Chic_Move.instance.chic_ok == true || Cat_Move.instance.cat_ok == true)
         {
             x = Cow_Move.instance.x;
             y = Cow_Move.instance.y;
@@ -47,7 +47,7 @@ public class Cat_Move : MonoBehaviour
             Cow_Move.instance.point_y[2] = transform.position;
             posi_index = 0;
             cat_ok = false;
-        }
+        }*/
         /*if (posi_index == 4)
         {
             x = Cow_Move.instance.x;
