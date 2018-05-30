@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Capstone2/Capstone/Assets/test.unity
+  isLoaded: 0
+  isActive: 0
