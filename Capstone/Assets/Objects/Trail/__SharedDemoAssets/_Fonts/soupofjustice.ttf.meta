@@ -1,14 +1,22 @@
 fileFormatVersion: 2
-guid: f045350979de1e84a833bdbac7daa2dc
+guid: 20fa92f0853e6184d970753af3183956
 TrueTypeFontImporter:
-  serializedVersion: 2
+  externalObjects: {}
+  serializedVersion: 4
   fontSize: 16
   forceTextureCase: -2
-  characterSpacing: 1
-  characterPadding: 0
+  characterSpacing: 0
+  characterPadding: 1
   includeFontData: 1
-  use2xBehaviour: 0
-  fontNames: []
+  fontName: Soup of Justice
+  fontNames:
+  - Soup of Justice
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f045350979de1e84a833bdbac7daa2dc, type: 3}
   customCharacters: 
   fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
