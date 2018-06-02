@@ -55,6 +55,7 @@
      <Compile Include="Assets\Cat_Move.cs" />
      <Compile Include="Assets\Chic_Move.cs" />
      <Compile Include="Assets\Cow_Move.cs" />
+     <Compile Include="Assets\intro\auto.cs" />
      <Compile Include="Assets\intro\NewBehaviourScript.cs" />
      <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\AlwaysForward.cs" />
      <Compile Include="Assets\Objects\Trail\__Effects (Trails) Examples\Scripts\ConstForce.cs" />
