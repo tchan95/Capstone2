@@ -79,6 +79,7 @@
      <Compile Include="Assets\Objects\Trail\Shared\Utillities\GizmosExtra.cs" />
      <Compile Include="Assets\Objects\Trail\Shared\Utillities\Range.cs" />
      <Compile Include="Assets\pauseMenu\backMenu.cs" />
+     <Compile Include="Assets\pauseMenu\mainMenu.cs" />
      <Compile Include="Assets\pauseMenu\Resume_script.cs" />
      <Compile Include="Assets\time_script\Timecount.cs" />
      <Compile Include="Assets\time_script\Timeout.cs" />
