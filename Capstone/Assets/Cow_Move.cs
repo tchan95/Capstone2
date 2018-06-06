@@ -157,6 +157,7 @@ public class Cow_Move : MonoBehaviour
                 transform.Rotate(0, 10, 0);
             }
         }
+        GameObject.Find("timeout_obj").GetComponent<Timeout>().startTimeout();
     }
 }
 

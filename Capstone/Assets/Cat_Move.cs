@@ -102,7 +102,7 @@ public class Cat_Move : MonoBehaviour
 
 
         }
-       
+        
     }
     public void Move_Init()
     {
@@ -130,6 +130,7 @@ public class Cat_Move : MonoBehaviour
                 transform.Rotate(0, 10, 0);
             }
         }
+        GameObject.Find("timeout_obj").GetComponent<Timeout>().startTimeout();
     }
 }
 

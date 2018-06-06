@@ -15,7 +15,6 @@ public class Timeout : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Invoke("startTimeout", 7.8f);
     }
 
     public void startTimeout() 
