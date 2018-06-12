@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class mainMenu : MonoBehaviour {
 
-    public void ClickFrom3D()
+    public void LoadMainScene()
     {
         SceneManager.LoadScene(0);
     }
