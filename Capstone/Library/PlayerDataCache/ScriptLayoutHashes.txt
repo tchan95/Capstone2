@@ -131,6 +131,7 @@ b88b90024062d37cf0669909c53a7733 Assembly-CSharp.dll:.TankProjectile
 410e7c866c2920efbd054af9268d126d Assembly-CSharp.dll:.Cow_Move
 a7481fea40a8bafffbb61381e5a47460 Assembly-CSharp.dll:.TankTranslator
 d22bfd4150a115474125cc4aa9e853a6 Assembly-CSharp.dll:PigeonCoopToolkit.Effects.Trails.SmokePlume
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.auto
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -172,4 +173,7 @@ db00629f2a6ba77bd5f95b8b52d69d4e Assembly-CSharp.dll:PigeonCoopToolkit.Effects.T
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.walk2
 dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.ConstForce
 37b2c0f51250c6afdcc9b99c9d6d8ce8 Assembly-CSharp.dll:.Anima_Move
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.auto
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.mainMenu
+24992e548e095fd50f57d9de3106570d Assembly-CSharp.dll:.Resume_script
+24992e548e095fd50f57d9de3106570d Assembly-CSharp.dll:.backMenu
+9c05d3afedc86073f3d4f522d42f2047 Assembly-CSharp.dll:.Timecount
